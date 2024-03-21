@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :users
   get 'pages/home'
   get 'pages/about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -11,4 +10,14 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "pages#home"
+
+
+  resources :users
+  # get 'users/index'
+  # get 'users/:id' => 'users#show'
+  # get 'users/new'
+  # post 'users' => 'users#create'
+  # get 'users/:id/edit' => 'users#edit'
+  # patch 'users/:id' => 'users#update'
+  # delete 'users/:id' => 'users#destroy'
 end
